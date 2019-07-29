@@ -6,7 +6,11 @@ namespace SecondTaskPartOne
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HtmlBuilder b = new HtmlBuilder();
+            b.buildHtml();
+
+            PrintToFile p = new PrintToFile();
+            p.WriteToFile(b.buildHtml());
         }
     }
 }

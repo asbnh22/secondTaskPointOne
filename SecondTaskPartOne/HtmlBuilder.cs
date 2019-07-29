@@ -40,8 +40,8 @@ namespace SecondTaskPartOne
             };
 
             builder.Append("<body>\n");
-            List<String> loh = users.Select(u => buildUserRef(u)).ToList();
-            builder.AppendJoin(" |\n", loh);
+            List<String> listOfUsers = users.Select(u => buildUserRef(u)).ToList();
+            builder.AppendJoin(" |\n", listOfUsers);
             builder.Append("\n</body>");
             //Console.WriteLine(builder);
             //Console.ReadKey();
